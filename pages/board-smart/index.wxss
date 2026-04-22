@@ -1,0 +1,24 @@
+@import "../../app.wxss";
+
+.board-page { height: 100vh; }
+.board-wrap { padding: 20rpx; }
+.smart-theme { background: #061625; color: #d8eeff; }
+.card { border-radius: 18rpx; border: 1px solid #1f3b55; background: #0d2438; margin-bottom: 16rpx; overflow: hidden; }
+.hero-text { padding: 18rpx; }
+.hero-title { font-size: 56rpx; font-weight: 800; }
+.hero-sub { margin-top: 8rpx; font-size: 32rpx; }
+.hero-en { margin-top: 4rpx; color: #9ec4de; font-size: 24rpx; }
+.tag-row { margin-top: 12rpx; display: flex; flex-wrap: wrap; gap: 8rpx; }
+.tag-row text { padding: 6rpx 12rpx; border: 1px solid #2b4d6b; border-radius: 999rpx; color: #8fd4ff; font-size: 22rpx; }
+.hero-img { width: 100%; height: 360rpx; }
+.grid.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12rpx; margin-bottom: 12rpx; }
+.panel { padding: 14rpx; }
+.panel-title { font-size: 30rpx; font-weight: 700; color: #95d4ff; margin-bottom: 8rpx; }
+.panel-text { color: #c0d6e8; font-size: 24rpx; line-height: 1.6; }
+.icon-list { display: flex; flex-wrap: wrap; gap: 8rpx; }
+.icon-list text { padding: 6rpx 10rpx; background: #13334b; border-radius: 10rpx; font-size: 22rpx; }
+.panel-image { width: 100%; height: 220rpx; border-radius: 12rpx; }
+.metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8rpx; }
+.metric-grid view { padding: 12rpx 6rpx; background: #13334b; border-radius: 10rpx; text-align: center; }
+.metric-grid text { display: block; color: #9fb9cf; font-size: 20rpx; }
+.metric-grid .num { color: #8fd4ff; font-size: 30rpx; font-weight: 700; }

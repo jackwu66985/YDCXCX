@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/portfolio/index",
+    "pages/about/index",
+    "pages/detail-reading/index",
+    "pages/board-smart/index",
+    "pages/board-furniture/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "作品集",
+    "navigationBarBackgroundColor": "#f3f3f1",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f3f3f1"
+  },
+  "tabBar": {
+    "color": "#8f8880",
+    "selectedColor": "#7a5d3b",
+    "backgroundColor": "#efefed",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/portfolio/index",
+        "text": "作品集"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

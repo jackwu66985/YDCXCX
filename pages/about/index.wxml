@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="card">
+    <image src="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=900&q=80" mode="aspectFill" />
+    <view class="card-body">
+      <view class="title">王睿熙 · 产品设计专业</view>
+      <view class="sub">对工业设计、交互与可持续产品策略有持续实践。</view>
+    </view>
+  </view>
+</view>

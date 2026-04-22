@@ -1,0 +1,52 @@
+<scroll-view scroll-y="true" class="board-page smart-theme">
+  <view class="board-wrap">
+    <view class="hero card">
+      <view class="hero-text">
+        <view class="hero-title">智能家居中心</view>
+        <view class="hero-sub">环境计算环境的触觉界面</view>
+        <view class="hero-en">Smart Home Hub · Tactile Interface</view>
+        <view class="tag-row">
+          <text>环境感知</text>
+          <text>触觉交互</text>
+          <text>智能中枢</text>
+          <text>场景联动</text>
+        </view>
+      </view>
+      <image class="hero-img" src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80" mode="aspectFill" />
+    </view>
+
+    <view class="grid two-col">
+      <view class="card panel">
+        <view class="panel-title">01 设计理念</view>
+        <view class="panel-text">以触觉为核心的智能中枢，整合温湿感知、空气质量监测与灯光/安防联动，提供自然直观的家庭交互入口。</view>
+      </view>
+      <view class="card panel">
+        <view class="panel-title">02 核心功能</view>
+        <view class="icon-list">
+          <text>灯光控制</text><text>温湿感知</text><text>CO₂监测</text><text>窗帘联动</text><text>安防联动</text><text>语音/触控</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="grid two-col">
+      <view class="card panel">
+        <view class="panel-title">03 产品细节</view>
+        <image class="panel-image" src="https://images.unsplash.com/photo-1582582429416-5f45f5ea2f8f?auto=format&fit=crop&w=900&q=80" mode="aspectFill" />
+      </view>
+      <view class="card panel">
+        <view class="panel-title">04 使用场景</view>
+        <image class="panel-image" src="https://images.unsplash.com/photo-1585144570839-6f0c4a5f565b?auto=format&fit=crop&w=900&q=80" mode="aspectFill" />
+      </view>
+    </view>
+
+    <view class="card panel">
+      <view class="panel-title">05 指标数据</view>
+      <view class="metric-grid">
+        <view><text class="num">26.5℃</text><text>温度</text></view>
+        <view><text class="num">48%</text><text>湿度</text></view>
+        <view><text class="num">620ppm</text><text>CO₂</text></view>
+        <view><text class="num">38dB</text><text>噪音</text></view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,20 @@
+@import "../../app.wxss";
+
+.board-page { height: 100vh; }
+.board-wrap { padding: 20rpx; }
+.furniture-theme { background: #f6f4ee; color: #36492b; }
+.card { border-radius: 18rpx; border: 1px solid #dde2d2; background: #fffef9; margin-bottom: 16rpx; overflow: hidden; }
+.hero-text { padding: 18rpx; }
+.hero-title { font-size: 56rpx; font-weight: 800; color: #445a35; }
+.hero-sub { margin-top: 8rpx; font-size: 32rpx; color: #5e7251; }
+.tag-row { margin-top: 12rpx; display: flex; flex-wrap: wrap; gap: 8rpx; }
+.tag-row text { padding: 6rpx 12rpx; border: 1px solid #cfd6c1; border-radius: 999rpx; color: #5f734e; font-size: 22rpx; }
+.hero-img { width: 100%; height: 360rpx; }
+.grid.three-col { display: grid; grid-template-columns: 1fr; gap: 12rpx; margin-bottom: 12rpx; }
+.grid.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12rpx; margin-bottom: 12rpx; }
+.panel { padding: 14rpx; }
+.panel-title { font-size: 30rpx; font-weight: 700; color: #4d6040; margin-bottom: 8rpx; }
+.panel-text { color: #637658; font-size: 24rpx; line-height: 1.6; }
+.step-list { display: flex; flex-direction: column; gap: 6rpx; }
+.step-list text { font-size: 24rpx; color: #637658; }
+.panel-image { width: 100%; height: 240rpx; border-radius: 12rpx; }
