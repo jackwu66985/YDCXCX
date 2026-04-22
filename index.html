@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品集应用</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="phone-shell">
+      <header class="top-bar">
+        <button id="backBtn" class="icon-btn" aria-label="返回">←</button>
+        <h1 id="pageTitle">首页</h1>
+        <span class="top-spacer"></span>
+      </header>
+
+      <main id="appContent" class="content"></main>
+
+      <nav class="bottom-nav">
+        <button class="tab active" data-route="home">首页</button>
+        <button class="tab" data-route="portfolio">作品集</button>
+        <button class="tab" data-route="about">关于</button>
+      </nav>
+    </div>
+
+    <template id="homeTpl">
+      <section class="profile-hero">
+        <img class="avatar" src="https://i.imgur.com/2nCt3Sbl.jpg" alt="头像" />
+        <h2>王睿熙</h2>
+        <p>2022-2026 咸阳师范学院 本科/产品设计专业</p>
+        <div class="tags"><span>工业设计</span><span>用户体验研究</span></div>
+      </section>
+
+      <section>
+        <h3 class="section-title">精选作品</h3>
+        <article class="feature-card clickable" data-route="detail">
+          <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80" alt="垂直阅读舱" />
+          <div class="feature-body">
+            <div><h4>垂直阅读舱</h4><p>毕业设计, 2023</p></div>
+            <span class="arrow">↗</span>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h3 class="section-title">近期探索</h3>
+        <ul class="mini-list">
+          <li><img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=600&q=80" alt="材质研究" /><div><h4>材质研究</h4><p>胡桃木与铝</p></div><span>›</span></li>
+          <li><img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80" alt="数字原型" /><div><h4>数字原型</h4><p>CAD 人机工程学</p></div><span>›</span></li>
+        </ul>
+      </section>
+    </template>
+
+    <template id="portfolioTpl">
+      <section>
+        <h2 class="section-main">精选作品</h2>
+        <p class="section-desc">专注于结构完整性和用户体验的工业与数字设计探索档案。</p>
+
+        <div class="work-grid">
+          <article class="work-card clickable" data-route="detail">
+            <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80" alt="垂直阅读舱" />
+            <div><h4>垂直阅读舱</h4><p>针对图书馆公共空间设计的垂直式独立阅读空间研究。</p></div>
+          </article>
+          <article class="work-card clickable" data-route="smart-home-board">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80" alt="智能家居中心" />
+            <div><h4>智能家居中心</h4><p>点击查看展板展示（工业设计）</p></div>
+          </article>
+          <article class="work-card clickable" data-route="furniture-board">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="可持续家具" />
+            <div><h4>可持续家具</h4><p>点击查看展板展示（产品设计）</p></div>
+          </article>
+          <article class="work-card">
+            <img src="https://images.unsplash.com/photo-1616047006789-b7af4a6f9d4d?auto=format&fit=crop&w=1200&q=80" alt="公共图书馆垂直阅读舱宣传片" />
+            <div><h4>公共图书馆垂直阅读舱宣传片</h4><p>产品介绍展示视频</p></div>
+          </article>
+        </div>
+      </section>
+    </template>
+
+    <template id="detailTpl">
+      <section class="detail-head">
+        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80" alt="垂直阅读舱主图" />
+        <div class="meta"><span>毕业设计</span><span>2026</span></div>
+        <h2>垂直阅读舱</h2>
+        <p>本设计服务以公共图书馆的阅读空间为研究对象，提出垂直阅读舱方案，以八角形单舱为基础单元，共享垂直服务核心构架与服务框架。</p>
+      </section>
+
+      <section class="kv-blocks">
+        <h3>01 / 研究洞察</h3>
+        <div class="insight-grid">
+          <article><h4>声学隔离</h4><p>78%的受访学生表示环境噪音是开放式图书馆中影响专注的主要因素。</p></article>
+          <article><h4>空间稀缺</h4><p>城市校园面临 1:40 的私人学习座位与在校生比例，需要更高密度解决方案。</p></article>
+        </div>
+      </section>
+    </template>
+
+    <template id="smartHomeBoardTpl">
+      <section class="board board-dark">
+        <div class="board-hero">
+          <div>
+            <h2>智能家居中心</h2>
+            <p>环境计算环境的触觉界面 / Smart Home Hub</p>
+            <div class="chip-row"><span>环境感知</span><span>触觉交互</span><span>智能中枢</span></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80" alt="智能家居中心主视觉" />
+        </div>
+        <div class="board-grid two">
+          <article><h3>01 设计理念</h3><p>以触觉为核心的家庭控制中心，整合温湿度、空气质量、照明与安防联动。</p></article>
+          <article><h3>02 核心功能</h3><p>灯光控制 / 温湿感知 / CO₂ 监测 / 语音与触控交互。</p></article>
+          <article><img src="https://images.unsplash.com/photo-1582582429416-5f45f5ea2f8f?auto=format&fit=crop&w=900&q=80" alt="应用场景" /></article>
+          <article><img src="https://images.unsplash.com/photo-1585144570839-6f0c4a5f565b?auto=format&fit=crop&w=900&q=80" alt="结构解析" /></article>
+        </div>
+        <div class="board-grid four metrics">
+          <article><strong>26.5℃</strong><small>室温</small></article>
+          <article><strong>48%</strong><small>湿度</small></article>
+          <article><strong>620ppm</strong><small>CO₂</small></article>
+          <article><strong>38dB</strong><small>噪音</small></article>
+        </div>
+      </section>
+    </template>
+
+    <template id="furnitureBoardTpl">
+      <section class="board board-light">
+        <div class="board-hero split">
+          <div>
+            <h2>可持续家具</h2>
+            <p>利用零浪费制造原则的平板包装椅</p>
+            <div class="chip-row"><span>零浪费制造</span><span>平板包装</span><span>模块组装</span></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="可持续家具主视觉" />
+        </div>
+        <div class="board-grid three light-cards">
+          <article><h3>01 设计概念</h3><p>榉木多层板构建模块化椅体，无需五金与胶水，便于拆装回收。</p></article>
+          <article><h3>02 平板包装</h3><p>单片排版降低运输体积，兼顾强度与轻量化。</p></article>
+          <article><h3>03 结构解析</h3><p>靠背、座板、前后腿板榫接固定，确保稳定和耐用。</p></article>
+        </div>
+        <div class="board-grid four light-cards">
+          <article><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=700&q=80" alt="组装流程1" /><p>平板展开</p></article>
+          <article><img src="https://images.unsplash.com/photo-1582582494700-215f4c2d6efc?auto=format&fit=crop&w=700&q=80" alt="组装流程2" /><p>榫卯锁定</p></article>
+          <article><img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=700&q=80" alt="产品细节" /><p>圆角边缘处理</p></article>
+          <article><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=80" alt="材料展示" /><p>环保材质</p></article>
+        </div>
+      </section>
+    </template>
+
+    <template id="aboutTpl">
+      <section class="about-hero"><img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=900&q=80" alt="设计师介绍" /></section>
+      <section class="about-card">
+        <h2>王睿熙<br />产品设计专业</h2>
+        <p>我叫王睿熙，本人有较强的学习能力，对待工作认真踏实，有独立完成项目的经验。</p>
+        <div class="actions"><button>联系我</button><button class="ghost">下载简历</button></div>
+      </section>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
