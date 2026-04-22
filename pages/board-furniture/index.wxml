@@ -1,0 +1,44 @@
+<scroll-view scroll-y="true" class="board-page furniture-theme">
+  <view class="board-wrap">
+    <view class="hero card">
+      <view class="hero-text">
+        <view class="hero-title">可持续家具</view>
+        <view class="hero-sub">利用零浪费制造原则的平板包装椅</view>
+        <view class="tag-row">
+          <text>零浪费制造</text>
+          <text>平板包装</text>
+          <text>可持续材料</text>
+          <text>模块组装</text>
+        </view>
+      </view>
+      <image class="hero-img" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" mode="aspectFill" />
+    </view>
+
+    <view class="grid three-col">
+      <view class="card panel"><view class="panel-title">01 设计概念</view><view class="panel-text">采用整板优化切割，最大化材料利用率；结构通过榫接实现快速装配与重复利用。</view></view>
+      <view class="card panel"><view class="panel-title">02 包装运输</view><view class="panel-text">平板化包装显著降低运输体积与仓储成本，便于电商配送和校园搬运。</view></view>
+      <view class="card panel"><view class="panel-title">03 结构解析</view><view class="panel-text">靠背板、座板、侧板与前后腿板通过卡槽锁定，稳定支撑并便于拆解。</view></view>
+    </view>
+
+    <view class="grid two-col">
+      <view class="card panel">
+        <view class="panel-title">04 组装流程</view>
+        <view class="step-list">
+          <text>① 平板展开</text>
+          <text>② 安装侧板与后腿</text>
+          <text>③ 插入座板与前腿</text>
+          <text>④ 插入靠背并锁定</text>
+        </view>
+      </view>
+      <view class="card panel">
+        <view class="panel-title">05 产品细节</view>
+        <image class="panel-image" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80" mode="aspectFill" />
+      </view>
+    </view>
+
+    <view class="grid two-col">
+      <view class="card panel"><view class="panel-title">06 尺寸信息</view><view class="panel-text">参考尺寸：H 820 / W 450 / D 420 (mm)</view></view>
+      <view class="card panel"><view class="panel-title">07 CMF 材质工艺</view><view class="panel-text">榉木多层板 + 水性环保涂层，圆角处理提升触感与安全性。</view></view>
+    </view>
+  </view>
+</scroll-view>

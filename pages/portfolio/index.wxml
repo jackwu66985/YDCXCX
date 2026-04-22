@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="section-title">精选作品</view>
+
+  <navigator class="card" url="/pages/detail-reading/index">
+    <image src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80" mode="aspectFill" />
+    <view class="card-body"><view class="title">垂直阅读舱</view></view>
+  </navigator>
+
+  <navigator class="card" url="/pages/board-smart/index">
+    <image src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80" mode="aspectFill" />
+    <view class="card-body"><view class="title">智能家居中心</view><view class="sub">点击查看展板展示（图一）</view></view>
+  </navigator>
+
+  <navigator class="card" url="/pages/board-furniture/index">
+    <image src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" mode="aspectFill" />
+    <view class="card-body"><view class="title">可持续家具</view><view class="sub">点击查看展板展示（图二）</view></view>
+  </navigator>
+</view>
